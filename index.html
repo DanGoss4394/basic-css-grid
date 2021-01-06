@@ -62,9 +62,38 @@
         grid-template-columns: 2fr 2fr 1fr;
         gap: 30px;
       }
+      .dont_image_box {
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
       .dont_image_box img {
         width: 50%;
+      }
+
+      .dont_image_box div {
+        font-size: 14px;
+        color: #999999;
+      }
+
+      .dos_donts_heading {
+        font-weight: 900;
+        margin-bottom: 20px;
+        margin-left: 40px;
+      }
+
+      .blue_text {
+        color: #0079ff;
+      }
+
+      .red_text {
+        color: #dc0004;
+      }
+
+      .dos_donts_list li {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 16px;
       }
     </style>
   </head>
@@ -113,7 +142,7 @@
 
         <div class="dos_donts_wrapper">
           <div class="dos_donts_list">
-            <div class="dos_donts_heading">Logo Do's</div>
+            <div class="dos_donts_heading red_text">Logo Do's</div>
 
             <ul>
               <li>Provide adequate white space surrounding the logo.</li>
@@ -124,7 +153,7 @@
           </div>
 
           <div class="dos_donts_list">
-            Logo Dont's
+            <div class="dos_donts_heading blue_text">Logo Dont's</div>
             <ul>
               <li>Strech or scale the logo non-uniformely</li>
               <li>Crop or partially cover the logo with other objects</li>
@@ -138,14 +167,17 @@
           <div class="dont_images">
             <div class="dont_image_box">
               <img src="./images/dont_stretch.png" alt="" />
+              <div>Stretch</div>
             </div>
             <div class="dont_images">
               <div class="dont_image_box">
                 <img src="./images/dont_crop.png" alt="" />
+                <div>Crop</div>
               </div>
               <div class="dont_images">
                 <div class="dont_image_box">
                   <img src="./images/dont_color.png" alt="" />
+                  <div>Color</div>
                 </div>
               </div>
             </div>
